@@ -8,3 +8,4 @@ class student:
         
 std= student("Andy", 15, "male")
 std.info()
+
