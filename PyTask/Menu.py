@@ -60,3 +60,5 @@ add_product("Rice", 1200)
 show_product()
 Search()
 
+# Task 3
+
