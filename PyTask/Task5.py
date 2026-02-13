@@ -34,12 +34,19 @@ def add_product(pName, Price):
     print(f"Product '{pName}' added successfully.")
 
 def clear_file():
-    if os.path.exists(FILE_NAME):
+    ask=input("You want to delete (Y/n)")
+    if ask=="y" and os.path.exists(FILE_NAME):
        os.remove(FILE_NAME)
+       return
+    if ask=="n":
+        print("File kept")
+    else:
+        print("Choose y for yes and n for no")
     open(FILE_NAME, 'w').close()
-    print("File reset successfully.")
+    print("File cleared")
 
 Products = load_products()
-
+add_product("Rice",1200)
+add_product("Sugar",800)
 clear_file()
 print(f"Current Products: ", Products)
