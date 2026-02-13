@@ -33,18 +33,7 @@ while False:
  
 #Task 4
  
-Products=[{
-    "name":"sugar",
-    "price":1500
-},{
-    "name":"Soap",
-    "price": 800
-},{
-    "name":"Rice",
-    "price":"1200"
-}
-
-]
+Products=[]
     
 def add_product(pName, Price):
     # pName=input("Insert Product name: ")
@@ -55,6 +44,18 @@ def add_product(pName, Price):
 def show_product():
     for index, product in enumerate(Products, start=1):
      print(f"{index}. {product['name']} Cost: {product['price']}")
-add_product("Cassava", 1200)
+     
+def Search():
+    search=input("Search ptoduct")
+    searchResult=[item for item in Products if search.lower() in item["name"].lower()]
+    if searchResult:
+        print(f"FOUND: {len(searchResult)} Matches:")
+        for product in searchResult:
+            print(f"{product['name']}: {product['price']}")
+    else:
+        print("FOUND: Nothing found")
+add_product("Sugar",1500)
+add_product("Soap", 800)
+add_product("Rice", 1200)
 show_product()
-add_product("Potato", 1500)
+Search()
