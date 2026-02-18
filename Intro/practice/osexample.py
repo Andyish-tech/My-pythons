@@ -21,3 +21,11 @@ except IOError as err:
     print(f"something went wrong while creating file: {err}")
     
 print(ish.path.exists(file_path))    
+
+try:
+    with open(file_path, 'r') as view:
+        content = view.read()
+        print('\n --- file content ---')
+        print(content)
+except FileNotFoundError:
+    print('Failed to find the specified file')
