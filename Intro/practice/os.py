@@ -17,9 +17,11 @@ print(os.path.isdir('os.py'))
 
 # Making Directory
 
-# dir=os.mkdir('Andy2')
-# print(dir)
+dir=os.mkdir('Andy2')
+print(dir)
 
-rmdir=os.remove("Andy")
+# Delete dir
+
+rmdir=os.rmdir("Andy2")
 
 print(rmdir)
