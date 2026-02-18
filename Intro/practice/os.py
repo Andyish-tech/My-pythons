@@ -14,3 +14,12 @@ print(os.path.exists('os.py'))
 print(os.path.isfile('os.py'))
              # check if is folder
 print(os.path.isdir('os.py'))
+
+# Making Directory
+
+# dir=os.mkdir('Andy2')
+# print(dir)
+
+rmdir=os.remove("Andy")
+
+print(rmdir)
