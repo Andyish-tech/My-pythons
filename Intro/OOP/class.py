@@ -1,11 +1,23 @@
-class student:
-    def __init__(self, name, age, gender):
-        self.name = name
-        self.age = age
-        self.gender= gender
-    def info(self):
-        print(f"My name is {self.name} am aged {self.age} and am {self.gender}")
-        
-std= student("Andy", 15, "male")
-std.info()
+class levelF:
+    name="SOD"
+l5sod=levelF()
 
+print("name of trade", l5sod.name)
+
+
+# Calculater
+
+class calculator:
+    
+    def add(self, a,b):
+        return a+b
+    def divide(self, a,b):
+        if b==0:
+            return"Can not divide by zero"
+        return a / b 
+    
+mycal = calculator()
+a,b = 10,5
+
+print(f"{a} + {b} = {mycal.add(a,b)}")
+print(f"{a} / {b} = {mycal.divide(a,b)}")
