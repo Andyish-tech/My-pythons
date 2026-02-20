@@ -25,7 +25,7 @@ print("Next week:", next_week.strftime("%Y-%m-%d"))
 
 print("\n ---- 3.2: Date and Time ----")
 
-formatted=now.strftime('%Y-%m-%d %H:%M:%S')
+formatted=now.strftime('%Y-%m-%d %H:%M%S')
 print("Formatted now:", formatted)
 
 date_str= "2024-06-15 09:03:00"
